@@ -6,7 +6,7 @@ app.get('/',function(req,res){
 app.get('/list',function(req,res){
 res.send('kkkkkk----jjj kist list')
 })
-var server=app.listen(8081,function(){
+var server=app.listen(app.get('port'),function(){
 var host=server.address().address;
 var port=server.address().port;
 console.log(host+'-----'+port);
